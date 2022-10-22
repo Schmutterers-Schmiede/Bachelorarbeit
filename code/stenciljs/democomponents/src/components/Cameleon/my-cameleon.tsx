@@ -21,14 +21,16 @@ export class myMover{
     else this.camEl.querySelector('.cameleon-circle').classList.remove('cloak')
   }
 
+
+
   render(){
     return(
-    <main>
-      <h2 id="cameleon-lable">Cameleon</h2>
+    <main class='cameleon-main'>
+      <h2 class='cameleon-label'>Cameleon</h2>
       <div id='cameleon-circle-container'>
         <div class='cameleon-circle'></div>
       </div>
-      <button class='cameleon-button' onClick={this.cloakButtonClickHandler.bind(this)}>Move</button>      
+      <button class='cameleon-button' onClick={this.cloakButtonClickHandler.bind(this)}>Cloak</button>      
     </main>
   )}
 }

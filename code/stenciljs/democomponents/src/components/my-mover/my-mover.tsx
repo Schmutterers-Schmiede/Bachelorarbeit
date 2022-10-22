@@ -25,8 +25,8 @@ export class myMover{
 
   render(){
     return(
-    <main>
-      <h2>Mover</h2>
+    <main class='mover-main'>
+      <h2 class='mover-label'>Mover</h2>
       <div id='mover-circle-container'>
         <div class='mover-circle'></div>
       </div>
