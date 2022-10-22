@@ -27,10 +27,10 @@ export class myMover{
     return(
     <main>
       <h2>Mover</h2>
-      <div id='circle-container'>
+      <div id='mover-circle-container'>
         <div class='mover-circle'></div>
       </div>
-      <button class='mover__move-button' onClick={this.moveButtonClickHandler.bind(this)}>Move</button>
+      <button class='mover-button' onClick={this.moveButtonClickHandler.bind(this)}>Move</button>
     </main>
 
   )}

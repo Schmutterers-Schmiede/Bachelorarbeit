@@ -17,20 +17,18 @@ export class myMover{
 
   cloakButtonClickHandler(){
     this.cloak = !this.cloak;
-    if(this.cloak) this.camEl.querySelector('.mover-circle').classList.add('move')
-    else this.camEl.querySelector('.mover-circle').classList.remove('move')
+    if(this.cloak) this.camEl.querySelector('.cameleon-circle').classList.add('cloak')
+    else this.camEl.querySelector('.cameleon-circle').classList.remove('cloak')
   }
-
-
 
   render(){
     return(
     <main>
-      <h2>Cameleon</h2>
-      <div id='circle-container'>
-        <div class='circle'></div>
+      <h2 id="cameleon-lable">Cameleon</h2>
+      <div id='cameleon-circle-container'>
+        <div class='cameleon-circle'></div>
       </div>
-      <button class='cloak-button' onClick={this.cloakButtonClickHandler.bind(this)}>Move</button>      
+      <button class='cameleon-button' onClick={this.cloakButtonClickHandler.bind(this)}>Move</button>      
     </main>
   )}
 }
