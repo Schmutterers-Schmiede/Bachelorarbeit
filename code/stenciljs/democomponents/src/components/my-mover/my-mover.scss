@@ -1,5 +1,6 @@
 :root{
   --myred: #DB4437;
+  --myblue: #4285F4;
 }
 
 my-mover{
@@ -56,7 +57,7 @@ my-mover{
   font-size: 15px;
   border-radius: 7px;
 
-  background-color: cornflowerblue;
+  background-color: var(--myblue);
   border: none;
   color: white;
  
