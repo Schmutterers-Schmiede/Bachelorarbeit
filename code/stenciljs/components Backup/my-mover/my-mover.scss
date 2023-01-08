@@ -1,8 +1,9 @@
 :root{
+  --myred: #F22715;
   --myblue: #4285F4;
 }
 
-my-cameleon{
+my-mover{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -16,54 +17,64 @@ my-cameleon{
   color:dimgray;
 }
 
-.cameleon-main{
-  position: relative;
+.mover-main{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-.cameleon-label{
+.mover-label{
   margin-top: 0;
   position: relative;
   top: 10px;
 }
 
-#cameleon-circle-container{
-  height: 50px;
-  width: 100%;
+#mover-circle-container{
+  height: 30px;
+  width: 150px;
 
-  margin-top: 25px;
-
-  display: flex;
-  justify-content: center;
+  margin-top: 35px;
 }   
 
-.cameleon-circle {
-  width: 50px;
-  height: 50px;
+.mover-circle {
+  width: 30px;
+  height: 30px;
+  margin-inline: 10px;
 
   border-radius: 50%;
-  background-color: var(--myblue);
-  align-self: center;
+  background-color: var(--myred);
   
   transition: .5s ease-out;
   
 }
 
-.cameleon-button{
+.mover-button{
   width: 70px;
   height: 25px;
   font-size: 15px;
   border-radius: 7px;
 
-  margin-top: 10px;
+  position: absolute;
+  bottom: 13px;
+  left: 40px;
 
   background-color: var(--myblue);
   border: none;
   color: white;
-  transition: background-color 0.5s ease;
+ 
 }
 
-.cloak{
-  background-color: white;
+.mover-circle.move{
+  animation: side-to-side 01.6s infinite forwards ease;
+}
+
+@keyframes side-to-side {
+  50% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+  
 }

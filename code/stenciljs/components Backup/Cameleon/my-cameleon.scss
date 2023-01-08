@@ -1,0 +1,78 @@
+:root{
+  --myblue: #4285F4;
+}
+
+my-cameleon{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;  
+  color:dimgray;
+}
+
+.cameleon-main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cameleon-label{
+  margin-top: 0;
+  position: relative;
+  top: 10px;
+}
+
+#cameleon-circle-container{
+  height: 50px;
+  width: 100%;
+
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+}   
+
+.cameleon-circle {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-color: var(--myblue);
+  align-self: center;
+  
+  transition: .5s ease-out;
+  
+}
+
+.cameleon-button{
+  width: 70px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 7px;
+  
+  position: absolute;
+  bottom: 13px;
+  left: 40px;
+
+  background-color: var(--myblue);
+  border: none;
+  color: white;
+  
+}
+
+.cloak{
+  animation: cloaking 0.8s forwards infinite alternate;
+
+}
+
+@keyframes cloaking {
+  100% {
+    background-color: transparent;
+  }
+}

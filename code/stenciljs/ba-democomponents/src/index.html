@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/democomponents.esm.js"></script>
-    <script nomodule src="/build/democomponents.js"></script>
+    <script type="module" src="/build/ba-democomponents.esm.js"></script>
+    <script nomodule src="/build/ba-democomponents.js"></script>
     <style>
       html, body{
         width: 100%;
@@ -15,14 +15,15 @@
         justify-content: center;
         align-items: center;
       }
-      my-mover, my-cameleon{
+      my-mover, my-propbinding, my-event-emitter{
         margin-right: 2rem;
       }
     </style>
   </head>
   <body>
     <my-mover></my-mover>
-    <my-cameleon></my-cameleon>
-    <my-orbit></my-orbit>
+    <my-propbinding input="Text from property"></my-propbinding>
+    <my-event-emitter></my-event-emitter>  
+    <my-event-listener></my-event-listener>  
   </body>
 </html>

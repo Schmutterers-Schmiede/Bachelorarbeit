@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface MyMover {
     }
+    interface MyOrbit {
+    }
 }
 declare global {
     interface HTMLMyCameleonElement extends Components.MyCameleon, HTMLStencilElement {
@@ -24,9 +26,16 @@ declare global {
         prototype: HTMLMyMoverElement;
         new (): HTMLMyMoverElement;
     };
+    interface HTMLMyOrbitElement extends Components.MyOrbit, HTMLStencilElement {
+    }
+    var HTMLMyOrbitElement: {
+        prototype: HTMLMyOrbitElement;
+        new (): HTMLMyOrbitElement;
+    };
     interface HTMLElementTagNameMap {
         "my-cameleon": HTMLMyCameleonElement;
         "my-mover": HTMLMyMoverElement;
+        "my-orbit": HTMLMyOrbitElement;
     }
 }
 declare namespace LocalJSX {
@@ -34,9 +43,12 @@ declare namespace LocalJSX {
     }
     interface MyMover {
     }
+    interface MyOrbit {
+    }
     interface IntrinsicElements {
         "my-cameleon": MyCameleon;
         "my-mover": MyMover;
+        "my-orbit": MyOrbit;
     }
 }
 export { LocalJSX as JSX };
@@ -45,6 +57,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-cameleon": LocalJSX.MyCameleon & JSXBase.HTMLAttributes<HTMLMyCameleonElement>;
             "my-mover": LocalJSX.MyMover & JSXBase.HTMLAttributes<HTMLMyMoverElement>;
+            "my-orbit": LocalJSX.MyOrbit & JSXBase.HTMLAttributes<HTMLMyOrbitElement>;
         }
     }
 }

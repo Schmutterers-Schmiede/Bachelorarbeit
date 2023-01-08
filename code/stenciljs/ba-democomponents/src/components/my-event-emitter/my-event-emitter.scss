@@ -3,7 +3,7 @@
   --myblue: #4285F4;
 }
 
-my-mover{
+my-event-emitter{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -17,45 +17,31 @@ my-mover{
   color:dimgray;
 }
 
-.mover-main{
+my-event-emitter p {
+  margin-top: 20px;
+}
+
+.event-emitter-main{
   width: 100%;
   height: 100%;
   position: relative;
-  top: 0px;
 }
 
-.mover-label{
+.event-emitter-label{
   margin-top: 0;
   position: relative;
   top: 10px;
 }
 
-#mover-circle-container{
-  height: 30px;
-  width: 150px;
-
-  margin-top: 35px;
-}   
-
-.mover-circle {
-  width: 30px;
-  height: 30px;
-  margin-inline: 10px;
-
-  border-radius: 50%;
-  background-color: var(--myred);
-  
-  transition: .5s ease-out;
-  
-}
-
-.mover-button{
-  margin-top: 20px;
-
+.event-emitter-button{
   width: 70px;
   height: 25px;
   font-size: 15px;
   border-radius: 7px;
+
+  position: absolute;
+  bottom: 13px;
+  left: 40px;
 
   background-color: var(--myblue);
   border: none;
@@ -63,6 +49,3 @@ my-mover{
  
 }
 
-.move{
-  transform: translateX(100px);
-}

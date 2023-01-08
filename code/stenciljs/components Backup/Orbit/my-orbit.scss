@@ -1,0 +1,97 @@
+:root{
+  --myred: #F22715;
+  --myblue: #4285F4;
+}
+
+my-orbit{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;  
+  color:dimgray;
+}
+
+.orbit-main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.orbit-label{
+  margin: 0;
+  position: relative;
+  top: 10px;
+}
+
+.orbit-container{
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  
+  top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.orbit-container.spin{
+  animation: spin-right 2s linear infinite;
+}
+
+.orbit-sun{
+  
+  position: absolute;
+  align-self: center;
+  left: 60px;
+  
+
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--myred);
+  border-radius: 50%;
+}
+
+.orbit-planet{
+  position: absolute;
+  top: 5px;
+  justify-self: center;
+  
+  width: 10px;
+  height: 10px;
+  
+  background-color: var(--myblue);
+  border-radius: 50%;
+}
+
+.orbit-button{
+  width: 70px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 7px;
+
+  position: absolute;
+  bottom: 13px;
+  left: 40px;
+
+  background-color: var(--myblue);
+  border: none;
+  color: white;
+}
+
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
