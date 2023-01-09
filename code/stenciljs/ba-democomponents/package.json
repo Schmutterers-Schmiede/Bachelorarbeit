@@ -12,7 +12,7 @@
   "unpkg": "dist/ba-democomponents/ba-democomponents.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/Schmutterers-Schmiede/ba-democomponents.git"
   },
   "files": [
     "dist/",

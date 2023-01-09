@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+my-mover, my-propbinding, my-event-emitter {
+  margin-right: 2rem;
+}
+
+
+
