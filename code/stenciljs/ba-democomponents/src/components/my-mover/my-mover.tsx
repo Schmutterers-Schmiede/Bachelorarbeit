@@ -20,8 +20,8 @@ export class myMover{
 
 
   
-  animRun:boolean = true;
-  buttonText:string = 'STOP'
+  animRun:boolean = false;
+  buttonText:string = 'PLAY'
   
   @Element() moveEl: HTMLElement;
 
@@ -43,7 +43,7 @@ export class myMover{
     <main class='mover-main'>
       <h2 class='mover-label'>Mover</h2>
       <div id='mover-circle-container'>
-        <div class='mover-circle move'></div>
+        <div class='mover-circle'></div>
       </div>
       <button class='mover-button' onClick={this.moveButtonClickHandler.bind(this)}>{this.buttonText}</button>
     </main>

@@ -1,5 +1,5 @@
 
-import { Component, h, Element, Prop, EventEmitter, Event } from "@stencil/core";
+import { Component, h, Element, EventEmitter, Event } from "@stencil/core";
 
 @Component({
   tag: 'my-event-emitter',
