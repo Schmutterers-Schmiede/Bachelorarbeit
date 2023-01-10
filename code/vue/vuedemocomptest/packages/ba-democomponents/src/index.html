@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/ba-democomponents.esm.js"></script>
+    <script nomodule src="/build/ba-democomponents.js"></script>
+    <style>
+      html, body{
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+      }
+      my-mover, my-propbinding, my-event-emitter{
+        margin-right: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <my-test></my-test> -->
+    
+    <my-mover></my-mover>
+    <my-propbinding input="Text from property"></my-propbinding>
+    <my-event-emitter></my-event-emitter>  
+    <my-event-listener></my-event-listener>  
+  </body>
+</html>
