@@ -12,22 +12,34 @@
         width: 100%;
         height: 100%;
         display: flex; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
       }
       my-mover, my-propbinding, my-event-emitter, my-event-listener{
         margin-right: 2rem;
       }
+
+      body > div{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
     </style>
   </head>
   <body>
     <!-- <my-test></my-test> -->
-    
-    <my-mover></my-mover>
-    <my-propbinding input="Text from property"></my-propbinding>
-    <my-event-emitter></my-event-emitter>  
-    <my-event-listener></my-event-listener>  
-    <my-parent></my-parent>
+    <div class="firstrow">
+      <my-mover></my-mover>
+      <my-propbinding input="Text from property"></my-propbinding>
+      <my-event-emitter></my-event-emitter>  
+      <my-event-listener></my-event-listener>  
+      <my-parent></my-parent>
+    </div>
+    <div class="secondrow">
+      <my-watchman></my-watchman>
+    </div>
     
   </body>
 </html>

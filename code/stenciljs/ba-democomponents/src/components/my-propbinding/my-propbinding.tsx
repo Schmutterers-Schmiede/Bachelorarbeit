@@ -16,7 +16,7 @@ export class myPropBinding{
     console.log("propbinding loaded");
   }
 
-  @Element() moveEl: HTMLElement;
+  @Element() propEl: HTMLElement;
   @Prop() input: string
 
   render(){

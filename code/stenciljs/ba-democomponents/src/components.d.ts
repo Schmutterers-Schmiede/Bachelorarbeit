@@ -19,6 +19,8 @@ export namespace Components {
     interface MyPropbinding {
         "input": string;
     }
+    interface MyWatchman {
+    }
 }
 export interface MyEventEmitterCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -61,6 +63,12 @@ declare global {
         prototype: HTMLMyPropbindingElement;
         new (): HTMLMyPropbindingElement;
     };
+    interface HTMLMyWatchmanElement extends Components.MyWatchman, HTMLStencilElement {
+    }
+    var HTMLMyWatchmanElement: {
+        prototype: HTMLMyWatchmanElement;
+        new (): HTMLMyWatchmanElement;
+    };
     interface HTMLElementTagNameMap {
         "my-child": HTMLMyChildElement;
         "my-event-emitter": HTMLMyEventEmitterElement;
@@ -68,6 +76,7 @@ declare global {
         "my-mover": HTMLMyMoverElement;
         "my-parent": HTMLMyParentElement;
         "my-propbinding": HTMLMyPropbindingElement;
+        "my-watchman": HTMLMyWatchmanElement;
     }
 }
 declare namespace LocalJSX {
@@ -85,6 +94,8 @@ declare namespace LocalJSX {
     interface MyPropbinding {
         "input"?: string;
     }
+    interface MyWatchman {
+    }
     interface IntrinsicElements {
         "my-child": MyChild;
         "my-event-emitter": MyEventEmitter;
@@ -92,6 +103,7 @@ declare namespace LocalJSX {
         "my-mover": MyMover;
         "my-parent": MyParent;
         "my-propbinding": MyPropbinding;
+        "my-watchman": MyWatchman;
     }
 }
 export { LocalJSX as JSX };
@@ -104,6 +116,7 @@ declare module "@stencil/core" {
             "my-mover": LocalJSX.MyMover & JSXBase.HTMLAttributes<HTMLMyMoverElement>;
             "my-parent": LocalJSX.MyParent & JSXBase.HTMLAttributes<HTMLMyParentElement>;
             "my-propbinding": LocalJSX.MyPropbinding & JSXBase.HTMLAttributes<HTMLMyPropbindingElement>;
+            "my-watchman": LocalJSX.MyWatchman & JSXBase.HTMLAttributes<HTMLMyWatchmanElement>;
         }
     }
 }

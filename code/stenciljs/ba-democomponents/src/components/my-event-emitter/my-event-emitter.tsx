@@ -22,7 +22,7 @@ export class myEventBinding{
 
 
 
-  @Element() moveEl: HTMLElement;
+  @Element() eventEl: HTMLElement;
   
   @Event() secretRevealed: EventEmitter<number> 
   eventFiringHandler(secret: number) {

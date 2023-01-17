@@ -1,0 +1,75 @@
+:root{
+  --myred: #F22715;
+  --myblue: #4285F4;
+}
+
+my-watchman p {
+  margin-top: 20px;
+}
+
+.watchman-main{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;  
+  color:dimgray;
+  
+  position: relative;
+}
+
+
+.watchman-label{
+  margin-top: 0;
+  position: relative;
+  top: 10px;
+}
+
+.watchman-text-container{
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+.watchman-text-container p{
+  text-align: center;
+}
+
+.watchman-main p{
+  margin: 0px;
+  max-width: 20ch;
+}
+
+.watchman-input{
+  width: 100px;
+  margin-top: 10px;
+}
+
+.watchman-button{
+  width: 70px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 7px;
+
+  position: absolute;
+  bottom: 13px;
+  left: 40px;
+
+  background-color: var(--myblue);
+  border: none;
+  color: white;
+ 
+}
+
+
+
+
