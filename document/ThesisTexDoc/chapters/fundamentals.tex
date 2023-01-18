@@ -1,0 +1,61 @@
+\chapter{Fundamentals and Related Works}
+\label{cha:Fundamentals}
+For context it is important to elaborate some basics about web components and the frameworks they are used in. This means going into the basic architecture of each framework, comparing the structure of their web components and those created in StencilJs.//
+
+\section{Web Components}
+At a basic level, a web component is a JavaScript file that defines an encapsulated piece of HTML, CSS and JavaScript code that can be interpreted by a web browser and treated as an HTML element like <p> or <div>. This basic form of a web component does not depend on any framework and can be imported either in JavaScript using an import command or in HTML using a <script> tag.
+
+\section{Angular}
+Angular is a framework for frontend web development and was created by Google in 2010 and is described in the official documentation as a Typescript based platform that includes a framework to build web applications, as well as many helpful libraries and tools to streamline the entire process of developing and maintaining a web application [1]. This means that Angular is not just a framework, but also has a large number of tools around the framework itself.
+
+\subsection{Components in Angular}
+While basic web components in JavaScript are complicated to implement, Angular components use TypeScript and are divided into multiple files for more structure:
+
+\begin{itemize}
+\item A Typescript file for the component’s class (i.e. myComp.component.ts)
+\item An HTML file for the visual representation (i.e. myComp.component.HTML)
+\item an SCSS file for styling (i.e. myComp.component.scss)
+\item a spec.ts (Typescript) file for testing purposes (i.e. myComp.spec.ts)
+\end{itemize}
+These files are linked together using the metadata given in the component.ts file.
+
+\subsection {Basic Concepts}
+
+\subsubsection {Services}
+A service is a part of a component that defines a specific behaviour or functionality and is written exclusively in Typescript. Services can be injected into components to provide functionality. This helps to make the code more modular and reuseable.
+
+\subsubsection{NgModules}
+A module in Angular represents a collection of components and services that share a certain context.
+
+\subsubsection{Decorators}
+An angular component is implemented as a Typescript class which can contain decorators with a certain type. A decorator tells the angular compiler how to use the following code (for example @NgComponent to tell the compiler that the following class is a component).
+
+\subsubsection{Metadata}
+as mentioned above, metadata tells the compiler what to do with a certain piece of code. To give a more specific example, the @NgComponent decorator’s metadata contains the location of the component’s HTML and CSS files. This way all files can be linked to a single component.
+
+\subsubsection{Templates}
+Templates are an enhancement of HTML featured in Angular that allows a developer to inline some functionality like hiding UI-Elements, which would normally take several additional lines of Typescript and CSS. It works by placing HTML code in a <template> tag. The UI element(s) can then be altered using event binding.
+
+\subsubsection{Event Binding}
+Event binding is a way of responding to DOM events inside the HTML code. A good example for this is the click event. By using it inside an HTML element like this:
+
+\begin{verbatim}
+	<button (Click)="onClick()">Do something</button>
+\end{verbatim}
+
+the button will call the onClick function in the Typescript class of the component when it is clicked. The data flow of event binding goes only from the HTML to the typescript class or from child component to parent component.
+
+\subsubsection{Property Binding}
+Similar to event binding, but in this case the data flow is reversed (from HTML to Typescript or from parent to child). Data is passed as a property via HTML. The properties must be defined in the Typescript class For example the path of an image can be given to an img tag with the following code:\\[0.5cm]
+HTML element:
+\begin{verbatim}
+	<img [src]="source">
+\end{verbatim}
+Inside the class:
+\begin{verbatim}
+	source:string = '../assets/image.jpg'
+\end{verbatim}
+
+\subsubsection{Directives}
+Directives are also Typescript classes that are defined with the @Directive decorator and can be attached to DOM elements in order to apply a certain behavior like changing the background color of a button while it is clicked. Directives are modular and can be used multiple times.The graph below describes how these concepts work together.
+
