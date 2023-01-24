@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  18 JAN 2023 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  24 JAN 2023 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,10 +1435,19 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
 ))))
+(c:/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count528
+\FV@InFile=\read7
+\FV@TabBox=\box84
+\c@FancyVerbLine=\count529
+\FV@StepNumber=\count530
+\FV@OutFile=\write5
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
-(./main.aux (./front/abstract.aux) (./chapters/introduction.aux)
+ (./main.aux
+(./front/abstract.aux) (./chapters/introduction.aux)
 (./chapters/fundamentals.aux) (./chapters/latex.aux) (./chapters/figures.aux)
 (./chapters/mathematics.aux) (./chapters/literature.aux)
 (./chapters/printing.aux) (./chapters/closing.aux) (./back/appendix_a.aux)
@@ -1446,24 +1455,24 @@ Package csquotes Info: ... found 'babel' package.
 (./back/printbox.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1499,25 +1508,25 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package csquotes Info: Redefining character " on input line 26.
+Package csquotes Info: Redefining character " on input line 31.
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count528
+\scratchcounter=\count531
 \scratchdimen=\dimen334
-\scratchbox=\box84
-\nofMPsegments=\count529
-\nofMParguments=\count530
+\scratchbox=\box85
+\nofMPsegments=\count532
+\nofMParguments=\count533
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count531
+\MPscratchCnt=\count534
 \MPscratchDim=\dimen335
-\MPnumerator=\count532
-\makeMPintoPDFobject=\count533
+\MPnumerator=\count535
+\makeMPintoPDFobject=\count536
 \everyMPtoPDFconversion=\toks54
 )
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 31.
  (./main.out) (./main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
@@ -1536,7 +1545,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count534
+\c@lstlisting=\count537
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1568,52 +1577,52 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 26.
-Package biblatex Info: Reference segment=0 on input line 26.
-Package hyperref Info: Option `pageanchor' set `false' on input line 51.
-Package csquotes Info: Redefining character " on input line 51.
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
+Package hyperref Info: Option `pageanchor' set `false' on input line 56.
+Package csquotes Info: Redefining character " on input line 56.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
-1.
+6.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-1.
+6.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<ot1.cmap>>
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-1.
+6.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oml.cmap>>
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-51.
+56.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )<<oms.cmap>><<omx.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 51.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+(Font)              <6> on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
 
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images//logo.pdf, id=108, 269.93045pt x 269.93045pt>
+<images//logo.pdf, id=128, 269.93045pt x 269.93045pt>
 File: images//logo.pdf Graphic file (type pdf)
 <use images//logo.pdf>
-Package pdftex.def Info: images//logo.pdf  used on input line 51.
+Package pdftex.def Info: images//logo.pdf  used on input line 56.
 (pdftex.def)             Requested size: 85.35805pt x 85.35826pt.
  [1
 
@@ -1622,14 +1631,14 @@ Package pdftex.def Info: images//logo.pdf  used on input line 51.
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images//logo.
 pdf>] [2]
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-51.
+56.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Package csquotes Info: Redefining character " on input line 51.
+Package csquotes Info: Redefining character " on input line 56.
  [3]
-Package hyperref Info: Option `pageanchor' set `true' on input line 51.
+Package hyperref Info: Option `pageanchor' set `true' on input line 56.
  [4
 
 ] (./main.toc
@@ -1637,28 +1646,30 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 5.
 Package tocbasic Info: Using my definition of `\numberline' on input line 7.
 Package tocbasic Info: Using my definition of `\numberline' on input line 8.
 Package tocbasic Info: Using my definition of `\numberline' on input line 9.
-Package tocbasic Info: Using my definition of `\numberline' on input line 22.
-Package tocbasic Info: Using my definition of `\numberline' on input line 23.
-Package tocbasic Info: Using my definition of `\numberline' on input line 24.
-Package tocbasic Info: Using my definition of `\numberline' on input line 25.
-Package tocbasic Info: Using my definition of `\numberline' on input line 26.
-Package tocbasic Info: Using my definition of `\numberline' on input line 27.
-Package tocbasic Info: Using my definition of `\numberline' on input line 28.
-Package tocbasic Info: Using my definition of `\numberline' on input line 29.
+Package tocbasic Info: Using my definition of `\numberline' on input line 30.
+Package tocbasic Info: Using my definition of `\numberline' on input line 32.
+Package tocbasic Info: Using my definition of `\numberline' on input line 33.
+Package tocbasic Info: Using my definition of `\numberline' on input line 34.
+Package tocbasic Info: Using my definition of `\numberline' on input line 35.
 Package tocbasic Info: Using my definition of `\numberline' on input line 36.
 Package tocbasic Info: Using my definition of `\numberline' on input line 37.
 Package tocbasic Info: Using my definition of `\numberline' on input line 38.
-)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
+Package tocbasic Info: Using my definition of `\numberline' on input line 39.
+Package tocbasic Info: Using my definition of `\numberline' on input line 46.
+Package tocbasic Info: Using my definition of `\numberline' on input line 47.
 
 [5
 
 ]
+Package tocbasic Info: Using my definition of `\numberline' on input line 48.
+)
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+ [6]
 \openout2 = `front/abstract.aux'.
 
- (./front/abstract.tex) [6
+ (./front/abstract.tex) [7
 
 
 ]
@@ -1693,17 +1704,55 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-56.
+<images/angular-component-structure.png, id=220, 702.625pt x 357.335pt>
+File: images/angular-component-structure.png Graphic file (type png)
+<use images/angular-component-structure.png>
+Package pdftex.def Info: images/angular-component-structure.png  used on input 
+line 62.
+(pdftex.def)             Requested size: 426.79945pt x 227.62492pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+
+Overfull \hbox (11.3892pt too wide) in paragraph at lines 60--64
+[]
+ []
+
+[4 <./images/angular-component-structure.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+74.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [4]
+) [5]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
+
+ []
+
+[7] [8] [9]
+Chapter 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 216.
+
+) [10
+
+]
 \openout2 = `chapters/latex.aux'.
 
  (./chapters/latex.tex
-Chapter 3.
-) [5
+Chapter 4.
+) [11
 
 
 
@@ -1712,8 +1761,8 @@ Chapter 3.
 \openout2 = `chapters/figures.aux'.
 
  (./chapters/figures.tex
-Chapter 4.
-) [6
+Chapter 5.
+) [12
 
 
 
@@ -1722,8 +1771,8 @@ Chapter 4.
 \openout2 = `chapters/mathematics.aux'.
 
  (./chapters/mathematics.tex
-Chapter 5.
-) [7
+Chapter 6.
+) [13
 
 
 
@@ -1732,8 +1781,8 @@ Chapter 5.
 \openout2 = `chapters/literature.aux'.
 
  (./chapters/literature.tex
-Chapter 6.
-) [8
+Chapter 7.
+) [14
 
 
 
@@ -1742,8 +1791,8 @@ Chapter 6.
 \openout2 = `chapters/printing.aux'.
 
  (./chapters/printing.tex
-Chapter 7.
-) [9
+Chapter 8.
+) [15
 
 
 
@@ -1752,8 +1801,8 @@ Chapter 7.
 \openout2 = `chapters/closing.aux'.
 
  (./chapters/closing.tex
-Chapter 8.
-) [10
+Chapter 9.
+) [16
 
 
 
@@ -1763,7 +1812,7 @@ Chapter 8.
 
  (./back/appendix_a.tex
 Appendix A.
-) [11
+) [17
 
 
 
@@ -1773,7 +1822,7 @@ Appendix A.
 
  (./back/appendix_b.tex
 Appendix B.
-) [12
+) [18
 
 
 
@@ -1783,7 +1832,7 @@ Appendix B.
 
  (./back/appendix_c.tex
 Appendix C.
-) [13
+) [19
 
 
 
@@ -1793,12 +1842,12 @@ Appendix C.
 
  (./back/appendix_d.tex
 Appendix D.
-) [14
+) [20
 
 
 
 
-] [15
+] [21
 
 
 
@@ -1809,7 +1858,7 @@ Appendix D.
  (./back/printbox.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 8.
-) [16
+) [22
 
 
 ] (./main.aux (./front/abstract.aux)
@@ -1819,19 +1868,19 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 (./back/appendix_a.aux) (./back/appendix_b.aux) (./back/appendix_c.aux)
 (./back/appendix_d.aux) (./back/printbox.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D2C5F9BB78F6F4FB2A5FA0841606AA60;3215.
+(rerunfilecheck)             Checksum: 3F2A9597ECD223324A75F56C97E8B065;3803.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42154 strings out of 475071
- 809807 string characters out of 5782907
- 1710807 words of memory out of 5000000
- 62569 multiletter control sequences out of 15000+600000
+ 42568 strings out of 475071
+ 816735 string characters out of 5782907
+ 1718647 words of memory out of 5000000
+ 62963 multiletter control sequences out of 15000+600000
  539111 words of font info for 78 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 130i,11n,145p,648b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 130i,11n,145p,997b,2457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/tex
 mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvip
 s/lm/lm-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c
@@ -1843,10 +1892,10 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022
 type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 ss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (22 pages, 303331 bytes).
+Output written on main.pdf (29 pages, 410921 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
