@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Hello, World!"/>
+  <HelloWorld/>
 </template>
 
 <script lang="ts">
