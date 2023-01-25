@@ -84,7 +84,6 @@ The @NgComponent decorator tells the compiler that the following class belongs t
 %xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 \section{React}
 React is an open source Library for building user interfaces released by Facebook in 2013 to make the development of their social platform easier. React is not a fully fledged framework, because it does not dictate any design system or even provide an eco-system or built in features. Much of the functionality of a React application must be drawn from third party libraries.
-\pagebreak
 \subsection{Components in React}
 In Angular technologies are artificially separated by having a file for HTML and TypeScript for a component. React however separates concerns, meaning that what belongs together is stored together resulting in components that consist of a single file that contains the TypeScript code as well as the CSS styling and the HTML code of a component. To achieve this, React uses JSX or TSX, depending on whether the project is built in JavaScript or TypeScript. In this thesis TSX will be used. Furthermore, in React, components can be implemented as either class components or functional components. Before React 16.8 a class component would be required for state management. Since update 16.8 however the difference between functional and class components is only syntactical and it is recommended to use functional components going forward. In contrary to Angular, React components are not updated, but created as new instances.\\[0.5cm]
 In the following examples the syntactical difference between class and functional components will be demonstrated. In both cases the HTML will look like this:
@@ -117,6 +116,7 @@ Without TSX every HTML element has to be created by calling the React.createElem
    'Hello World!'
  );
 \end{Verbatim}
+\pagebreak
 \textbf{Example for element as object:}
 \begin{Verbatim}[frame=single]
  const element = {
@@ -135,7 +135,6 @@ Without TSX every HTML element has to be created by calling the React.createElem
    )    
  }
 \end{Verbatim}
-
 \subsubsection{States}
 In React, a component maintains its own data using a state. A state is different to props in that the data is private and managed only by the component itself.
 By giving the component control over its own data it can rerender itself and does no longer need to be reinstantiated every time the data changes. Since React 16.8 the use of a state no longer requires a class component with a constructor, essentially making class components obsolete. An example will be given in the hook section\\
@@ -214,6 +213,37 @@ Services, decorators and metadata have already been covered in the Angular secti
 \chapter{Vue}
 Vue is a very simple frontend web framework created by ex-Google employee Evan You in 2014 with the goal of building a custom tool around the best parts of Angular. Vue is designed for creating smaller projects and can be used to create entire applications or just single widgets to be used in other websites.
 \subsection{Copmonents in Vue}
+Vue works with single file copmonents, meaning that all the code of a component is stored in a single file. While styling can be done externally in both Angular and React, this is not the case in Vue.\\[0.5cm]
+The structure of a Vue component is much simpler than that of a React component as it is divided into three html tags: template, script and style. The template tag contains the HTML code of the component while the script tag contains any JavaScript or TypeScript and the style tag contains the CSS styling.\\[0.5cm]
+\textbf{Example of a simple Vue component}
+\begin{Verbatim}[frame=single]
+ <template>
+   <p>Hello, World!<p>
+ </template>
+ 
+ <script lang="ts">
+   import {defineComponent} from 'vue';
+   
+   export default defineComponent({
+     name: 'hello-world',
+     components:{},
+     methods:{
+       hello(){console.log('Hello, World!');}
+     }
+   });
+ </script>
+ 
+ <style>
+   p {
+     text-align: center;
+     color: green;
+   }
+ <style/>
+\end{Verbatim}
+\subsubsection{Registration}
+For Vue to locate a component's implementation when it is encountered in a template it needs to be registered.
+Components can be registered either globally or locally.
+
 
 
 
