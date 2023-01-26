@@ -3,7 +3,7 @@
 For context it is important to elaborate some basics about web components and the frameworks they are used in. This means going into the basic architecture of each framework, comparing the structure of their web components and those created in StencilJs.//
 
 \section{Web Components}
-At a basic level, a web component is a JavaScript file that defines an encapsulated piece of HTML, CSS and JavaScript code that can be interpreted by a web browser and treated as an HTML element like <p> or <div>. This basic form of a web component does not depend on any framework and can be imported either in JavaScript using an import command or in HTML using a <script> tag.
+At a basic level, a web component is a JavaScript file that defines an encapsulated piece of HTML, CSS and JavaScript code that can be interpreted by a web browser and treated as an HTML element like <p> or <div>. This basic form of a web component does not depend on any framework and can be imported either in JavaScript using an import command or in HTML using a <script> tag. In this Thesis the terms "web component" and "component" will be used synonymously.
 
 \section{Angular}
 Angular is a framework for frontend web development and was created by Google in 2010. It is described in the official documentation as a Typescript based platform that includes a framework to build web applications, as well as many helpful libraries and tools to streamline the entire process of developing and maintaining a web application [1]. This means that Angular is not just a framework, but also has a large number of tools around the framework itself.
@@ -22,7 +22,7 @@ These files are linked together using the metadata given in the component.ts fil
 \subsection {Basic Concepts}
 
 \subsubsection {Services}
-A service is a part of a component that defines a specific behaviour or functionality and is written exclusively in Typescript. Services can be injected into components to provide functionality. This helps to make the code more modular and reuseable.
+A service is a part of a component that defines a specific behavior or functionality and is written exclusively in Typescript. Services can be injected into components to provide functionality. This helps to make the code more modular and reusable.
 
 \subsubsection{NgModules}
 A module in Angular represents a collection of components and services that share a certain context.
@@ -84,6 +84,7 @@ The @NgComponent decorator tells the compiler that the following class belongs t
 %xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 \section{React}
 React is an open source Library for building user interfaces released by Facebook in 2013 to make the development of their social platform easier. React is not a fully fledged framework, because it does not dictate any design system or even provide an eco-system or built in features. Much of the functionality of a React application must be drawn from third party libraries.
+
 \subsection{Components in React}
 In Angular technologies are artificially separated by having a file for HTML and TypeScript for a component. React however separates concerns, meaning that what belongs together is stored together resulting in components that consist of a single file that contains the TypeScript code as well as the CSS styling and the HTML code of a component. To achieve this, React uses JSX or TSX, depending on whether the project is built in JavaScript or TypeScript. In this thesis TSX will be used. Furthermore, in React, components can be implemented as either class components or functional components. Before React 16.8 a class component would be required for state management. Since update 16.8 however the difference between functional and class components is only syntactical and it is recommended to use functional components going forward. In contrary to Angular, React components are not updated, but created as new instances.\\[0.5cm]
 In the following examples the syntactical difference between class and functional components will be demonstrated. In both cases the HTML will look like this:
@@ -107,7 +108,7 @@ In the following examples the syntactical difference between class and functiona
 Note that there is no props object explicitely passed to the class. This is because the props object is auto generated from the HTML code.
 \subsection{Basic Concepts}
 \subsubsection{TSX}
-Without TSX every HTML element has to be created by calling the React.createElement function or as an object. TSX is an abstraction of TypeScript that enhances the syntax and enables the TypeScript compiler to parse HTML code in a TypeScript file into calls of the React.createElement function. Thus Typescript and HTML code can be stored in the same file. In TSX, a React component has a method called "render" that contains the HTML code to be rendered.\\\\
+Without TSX every HTML element has to be created by calling the React.createElement function or as an object. TSX is an abstraction of TypeScript that enhances the syntax and enables the TypeScript compiler to parse HTML code inside a TypeScript file into calls of the React.createElement function. Thus Typescript and HTML code can be stored in the same file. In TSX, a React component has a method called "render" that contains the HTML code to be rendered.\\\\
 \textbf{Example for React.createElement call:}
 \begin{Verbatim}[frame=single]
  const element = React.createElement(
@@ -210,44 +211,83 @@ In todays-fruit component
 
 \subsubsection{Other Concepts}
 Services, decorators and metadata have already been covered in the Angular section and are not much different in React.
-\chapter{Vue}
+\section{Vue}
 Vue is a very simple frontend web framework created by ex-Google employee Evan You in 2014 with the goal of building a custom tool around the best parts of Angular. Vue is designed for creating smaller projects and can be used to create entire applications or just single widgets to be used in other websites.
+
 \subsection{Copmonents in Vue}
-Vue works with single file copmonents, meaning that all the code of a component is stored in a single file. While styling can be done externally in both Angular and React, this is not the case in Vue.\\[0.5cm]
-The structure of a Vue component is much simpler than that of a React component as it is divided into three html tags: template, script and style. The template tag contains the HTML code of the component while the script tag contains any JavaScript or TypeScript and the style tag contains the CSS styling.\\[0.5cm]
+Vue uses single file copmonents, meaning that all the code of a component is stored in a single file. While styling can be done externally in both Angular and React, this is not the case in Vue.\\[0.5cm]
+The structure of a Vue component is much simpler than in React as it is divided into three HTML tags: template, script and style. The template tag contains the HTML code of the component while the script tag contains any JavaScript or TypeScript and the style tag contains the CSS styling.\\[0.5cm]
 \textbf{Example of a simple Vue component}
 \begin{Verbatim}[frame=single]
  <template>
-   <p>Hello, World!<p>
- </template>
- 
+   <h1>Hello, World!</h1>
+ </template>  
+
  <script lang="ts">
-   import {defineComponent} from 'vue';
-   
+   import { defineComponent } from 'vue';
+
    export default defineComponent({
      name: 'hello-world',
-     components:{},
-     methods:{
-       hello(){console.log('Hello, World!');}
+   });
+ </script>
+
+ <style scoped>
+   h1{color: green;}
+ </style>
+
+\end{Verbatim}
+\subsection{Basic Concepts}
+\subsubsection{Props}
+Properties of a component are declared in the script tag as either an array or an object named "props". If an array is used it contains only the names of the properties as strings. these properties do not have a fixed type and cannot be configured any further. By using an object it is possible to give the property a type and configure it (i.e. make it a required property among other things). In the object the properties are stored as nested objects that contain the property's configuration.\\
+\textbf{Example of Properties in a Vue component:}
+\begin{Verbatim}[frame=single]
+ .
+ .
+ .
+ <script lang="ts">
+   import { defineComponent } from 'vue';
+
+   export default defineComponent({
+     name: 'HelloWorld',
+     props: {
+       msg: {
+         type: string,
+         required: true
+       }
      }
    });
  </script>
- 
- <style>
-   p {
-     text-align: center;
-     color: green;
-   }
- <style/>
+ .
+ .
+ .
+\end{Verbatim}
+\subsubsection{Property binding}
+The Vue equivalent of Angular's property binding is the v-bind directive. On a surface level, the difference is only syntactical. By putting \begin{verbatim}
+v-bind: 
+\end{verbatim}
+before a property of an HTML element, variables can be assigned to the property.
+\textbf{Example of the v-bind directive:}
+\begin{Verbatim}
+ <hello-world v-bind:msg="{{message}}"\>
 \end{Verbatim}
 \subsubsection{Registration}
-For Vue to locate a component's implementation when it is encountered in a template it needs to be registered.
-Components can be registered either globally or locally.
+When the Vue compiler comes across a component inside a template tag it needs to know where to find the corresponding component file in order to render the component. Therefore a component must always be registered in its parent component. This is done via an object in a component's script tag that contains the names of all the components used in the component's template.
+Components can be registered either globally by using the app.component function or locally using the approach described above.
 
+\section{Stencil}
+Stencil is an open source library created by the ionic framework team to create web components that could be used in Angular, React and Vue using a single code base as ionic supports all three of these frameworks and provides a library of components out of the box that need to run in each framework. The most important part of Stencil are two features. The first being it's compiler which creates framework agnostic web  components, meaning pure JavaScript files and the second being the "output targets" feature which can produce framework native components.
 
+\subsection{Components in Stencil}
+Components in Stencil are written in TSX (more on TSX in the React chapter) with a separate CSS file. The structure of the component itself is very simple. The component is just a TypeScript class with a component decorator which holds metadata. Inside the Class most of a component's functionality that is not a private function uses a decorator.
 
-
-
+\subsection{Basic Concepts}
+\subsubsection{Most Common Decorators}
+In Stencil most functionalities are declared via a decorator. The most common ones are:
+\begin{itemize}
+\item \textbf{@Component:} The following class is a copmonent.
+\item \textbf{@Method:} The following function is a public Method.
+\item \textbf{@Event:} The following 
+\end{itemize}
 
 
 

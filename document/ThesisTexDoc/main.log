@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  24 JAN 2023 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  25 JAN 2023 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,22 +1646,21 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 5.
 Package tocbasic Info: Using my definition of `\numberline' on input line 7.
 Package tocbasic Info: Using my definition of `\numberline' on input line 8.
 Package tocbasic Info: Using my definition of `\numberline' on input line 9.
-Package tocbasic Info: Using my definition of `\numberline' on input line 30.
-Package tocbasic Info: Using my definition of `\numberline' on input line 32.
-Package tocbasic Info: Using my definition of `\numberline' on input line 33.
 Package tocbasic Info: Using my definition of `\numberline' on input line 34.
 Package tocbasic Info: Using my definition of `\numberline' on input line 35.
 Package tocbasic Info: Using my definition of `\numberline' on input line 36.
 Package tocbasic Info: Using my definition of `\numberline' on input line 37.
 Package tocbasic Info: Using my definition of `\numberline' on input line 38.
 Package tocbasic Info: Using my definition of `\numberline' on input line 39.
-Package tocbasic Info: Using my definition of `\numberline' on input line 46.
-Package tocbasic Info: Using my definition of `\numberline' on input line 47.
+Package tocbasic Info: Using my definition of `\numberline' on input line 40.
+Package tocbasic Info: Using my definition of `\numberline' on input line 41.
+Package tocbasic Info: Using my definition of `\numberline' on input line 48.
+Package tocbasic Info: Using my definition of `\numberline' on input line 49.
 
 [5
 
 ]
-Package tocbasic Info: Using my definition of `\numberline' on input line 48.
+Package tocbasic Info: Using my definition of `\numberline' on input line 50.
 )
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1739,30 +1738,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[7] [8] [9]
-Chapter 3.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 215.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--223
-
- []
-
-) [10
-
-]
+[7] [8] [9] [10]) [11]
 \openout2 = `chapters/latex.aux'.
 
  (./chapters/latex.tex
-Chapter 4.
-) [11
+Chapter 3.
+) [12
 
 
 
@@ -1771,8 +1752,8 @@ Chapter 4.
 \openout2 = `chapters/figures.aux'.
 
  (./chapters/figures.tex
-Chapter 5.
-) [12
+Chapter 4.
+) [13
 
 
 
@@ -1781,8 +1762,8 @@ Chapter 5.
 \openout2 = `chapters/mathematics.aux'.
 
  (./chapters/mathematics.tex
-Chapter 6.
-) [13
+Chapter 5.
+) [14
 
 
 
@@ -1791,8 +1772,8 @@ Chapter 6.
 \openout2 = `chapters/literature.aux'.
 
  (./chapters/literature.tex
-Chapter 7.
-) [14
+Chapter 6.
+) [15
 
 
 
@@ -1801,8 +1782,8 @@ Chapter 7.
 \openout2 = `chapters/printing.aux'.
 
  (./chapters/printing.tex
-Chapter 8.
-) [15
+Chapter 7.
+) [16
 
 
 
@@ -1811,8 +1792,8 @@ Chapter 8.
 \openout2 = `chapters/closing.aux'.
 
  (./chapters/closing.tex
-Chapter 9.
-) [16
+Chapter 8.
+) [17
 
 
 
@@ -1822,7 +1803,7 @@ Chapter 9.
 
  (./back/appendix_a.tex
 Appendix A.
-) [17
+) [18
 
 
 
@@ -1832,7 +1813,7 @@ Appendix A.
 
  (./back/appendix_b.tex
 Appendix B.
-) [18
+) [19
 
 
 
@@ -1842,7 +1823,7 @@ Appendix B.
 
  (./back/appendix_c.tex
 Appendix C.
-) [19
+) [20
 
 
 
@@ -1852,12 +1833,12 @@ Appendix C.
 
  (./back/appendix_d.tex
 Appendix D.
-) [20
+) [21
 
 
 
 
-] [21
+] [22
 
 
 
@@ -1868,7 +1849,7 @@ Appendix D.
  (./back/printbox.tex
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 8.
-) [22
+) [23
 
 
 ] (./main.aux (./front/abstract.aux)
@@ -1878,15 +1859,15 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 (./back/appendix_a.aux) (./back/appendix_b.aux) (./back/appendix_c.aux)
 (./back/appendix_d.aux) (./back/printbox.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3F2A9597ECD223324A75F56C97E8B065;3803.
+(rerunfilecheck)             Checksum: D163EA5664D00DD84CB1671C491E8F76;3816.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42568 strings out of 475071
- 816735 string characters out of 5782907
- 1718647 words of memory out of 5000000
+ 42569 strings out of 475071
+ 816746 string characters out of 5782907
+ 1718659 words of memory out of 5000000
  62963 multiletter control sequences out of 15000+600000
  539111 words of font info for 78 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1902,10 +1883,10 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022
 type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 ss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (29 pages, 411341 bytes).
+Output written on main.pdf (30 pages, 413630 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
  275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

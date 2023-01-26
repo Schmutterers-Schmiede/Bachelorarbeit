@@ -27,24 +27,26 @@
 \contentsline {subsubsection}{States}{7}{subsection.2.3.2}%
 \contentsline {subsubsection}{Hooks}{8}{subsection.2.3.2}%
 \contentsline {subsubsection}{Other Concepts}{9}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Vue}{10}{chapter.3}%
-\contentsline {subsection}{\numberline {3.0.1}Copmonents in Vue}{10}{subsection.3.0.1}%
-\contentsline {chapter}{\numberline {4}Working with La\-TeX\xspace }{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Figures, Tables, Source Code}{12}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Mathematical Elements}{13}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Using Literature}{14}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Printing the Manuscript}{15}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Closing Remarks}{16}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Technical Details}{17}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Supplementary Materials}{18}{appendix.B}%
-\contentsline {section}{\numberline {B.1}PDF Files}{18}{section.B.1}%
-\contentsline {paragraph}{Path: \nolinkurl {/}}{18}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Media Files}{18}{section.B.2}%
-\contentsline {paragraph}{Path: \nolinkurl {/media}}{18}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Online Sources (PDF Captures)}{18}{section.B.3}%
-\contentsline {paragraph}{Path: \nolinkurl {/online-sources}}{18}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Questionnaire}{19}{appendix.C}%
-\contentsline {chapter}{\numberline {D}La\-TeX\xspace Source Code}{20}{appendix.D}%
-\contentsline {chapter}{References}{21}{appendix*.4}%
-\contentsline {section}{Literature}{21}{section*.5}%
-\contentsline {section}{Online sources}{21}{section*.6}%
+\contentsline {section}{\numberline {2.4}Vue}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Copmonents in Vue}{10}{subsection.2.4.1}%
+\contentsline {subsubsection}{Props}{10}{subsection.2.4.1}%
+\contentsline {subsubsection}{Registration}{11}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Working with La\-TeX\xspace }{12}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Figures, Tables, Source Code}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Mathematical Elements}{14}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Using Literature}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Printing the Manuscript}{16}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Closing Remarks}{17}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Technical Details}{18}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Supplementary Materials}{19}{appendix.B}%
+\contentsline {section}{\numberline {B.1}PDF Files}{19}{section.B.1}%
+\contentsline {paragraph}{Path: \nolinkurl {/}}{19}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Media Files}{19}{section.B.2}%
+\contentsline {paragraph}{Path: \nolinkurl {/media}}{19}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Online Sources (PDF Captures)}{19}{section.B.3}%
+\contentsline {paragraph}{Path: \nolinkurl {/online-sources}}{19}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Questionnaire}{20}{appendix.C}%
+\contentsline {chapter}{\numberline {D}La\-TeX\xspace Source Code}{21}{appendix.D}%
+\contentsline {chapter}{References}{22}{appendix*.4}%
+\contentsline {section}{Literature}{22}{section*.5}%
+\contentsline {section}{Online sources}{22}{section*.6}%
