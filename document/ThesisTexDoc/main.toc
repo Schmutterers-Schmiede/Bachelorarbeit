@@ -40,20 +40,20 @@
 \contentsline {chapter}{\numberline {3}Solution}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Compiling Stencil Components}{14}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Pure JavaScript}{14}{subsection.3.1.1}%
-\contentsline {chapter}{\numberline {4}Figures, Tables, Source Code}{15}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Using Literature}{16}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Printing the Manuscript}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Closing Remarks}{18}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Technical Details}{19}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Supplementary Materials}{20}{appendix.B}%
-\contentsline {section}{\numberline {B.1}PDF Files}{20}{section.B.1}%
-\contentsline {paragraph}{Path: \nolinkurl {/}}{20}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Media Files}{20}{section.B.2}%
-\contentsline {paragraph}{Path: \nolinkurl {/media}}{20}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Online Sources (PDF Captures)}{20}{section.B.3}%
-\contentsline {paragraph}{Path: \nolinkurl {/online-sources}}{20}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Questionnaire}{21}{appendix.C}%
-\contentsline {chapter}{\numberline {D}La\-TeX\xspace Source Code}{22}{appendix.D}%
-\contentsline {chapter}{References}{23}{appendix*.4}%
-\contentsline {section}{Literature}{23}{section*.5}%
-\contentsline {section}{Online sources}{23}{section*.6}%
+\contentsline {chapter}{\numberline {4}Figures, Tables, Source Code}{16}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Using Literature}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Printing the Manuscript}{18}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Closing Remarks}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Technical Details}{20}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Supplementary Materials}{21}{appendix.B}%
+\contentsline {section}{\numberline {B.1}PDF Files}{21}{section.B.1}%
+\contentsline {paragraph}{Path: \nolinkurl {/}}{21}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Media Files}{21}{section.B.2}%
+\contentsline {paragraph}{Path: \nolinkurl {/media}}{21}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Online Sources (PDF Captures)}{21}{section.B.3}%
+\contentsline {paragraph}{Path: \nolinkurl {/online-sources}}{21}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Questionnaire}{22}{appendix.C}%
+\contentsline {chapter}{\numberline {D}La\-TeX\xspace Source Code}{23}{appendix.D}%
+\contentsline {chapter}{References}{24}{appendix*.4}%
+\contentsline {section}{Literature}{24}{section*.5}%
+\contentsline {section}{Online sources}{24}{section*.6}%
