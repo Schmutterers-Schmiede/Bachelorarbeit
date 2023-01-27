@@ -28,7 +28,7 @@ export class myEventBinding{
   
   
   @Watch('text')
-  changeDisplayText(text:string){
+  changeDisplayText(){
     this.displayText = this.text;
     console.log(this.displayText);    
   }

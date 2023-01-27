@@ -1,5 +1,5 @@
 
-import { Component, h, Element, Listen, State} from "@stencil/core";
+import { Component, h, Element} from "@stencil/core";
 
 @Component({
   tag: 'my-parent',

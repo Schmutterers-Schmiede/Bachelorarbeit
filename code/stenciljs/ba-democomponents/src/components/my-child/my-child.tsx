@@ -1,5 +1,5 @@
 
-import { Component, h, Element, Listen, State} from "@stencil/core";
+import { Component, h, Element} from "@stencil/core";
 
 @Component({
   tag: 'my-child',
@@ -9,7 +9,7 @@ import { Component, h, Element, Listen, State} from "@stencil/core";
 
 
 
-export class myEventBinding{
+export class myChild{
   componentWillLoad() {
     console.log("child about to load");
   }
