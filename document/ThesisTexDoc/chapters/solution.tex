@@ -1,0 +1,12 @@
+\chapter{Solution}
+\label{cha:solution}
+\section{Compiling Stencil Components}
+Stencil offers two ways of compiling its components into a format that can be used by other frameworks. The first way is to compile a component into a pure JavaScript file. The second way is to use the Stencil compiler's output target feature which can compile a Stencil component into a framework native component.
+
+\subsection{Pure JavaScript}
+The easy and less time consuming way of compiling a Stencil component is to compile it into a pure JavaScript file. This file is then ready for any browser to interpret. However if used in a framework, a small amount of boiler plate code is necessary in each of the frameworks.\\[0.5cm]
+A component library created in Stencil can be compiled using the console command 
+\begin{Verbatim}[frame=single]
+ npm run-script build
+\end{Verbatim}
+This will create a JavaScript component file along with 

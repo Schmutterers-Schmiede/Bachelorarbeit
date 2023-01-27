@@ -1,5 +1,5 @@
 \chapter{Fundamentals and Related Works}
-\label{cha:Fundamentals}
+\label{cha:fundamentals}
 For context it is important to elaborate some basics about web components and the frameworks they are used in. This means going into the basic architecture of each framework, comparing the structure of their web components and those created in StencilJs.//
 
 \section{Web Components}
@@ -262,12 +262,10 @@ Properties of a component are declared in the script tag as either an array or a
  .
 \end{Verbatim}
 \subsubsection{Property binding}
-The Vue equivalent of Angular's property binding is the v-bind directive. On a surface level, the difference is only syntactical. By putting \begin{verbatim}
-v-bind: 
-\end{verbatim}
-before a property of an HTML element, variables can be assigned to the property.
+The Vue equivalent of Angular's property binding is the v-bind directive. On a surface level, the difference is only syntactical. By putting \verb+"v-bind:"+
+before a property of an HTML element, variables can be assigned to the property.\\
 \textbf{Example of the v-bind directive:}
-\begin{Verbatim}
+\begin{Verbatim}[frame=single]
  <hello-world v-bind:msg="{{message}}"\>
 \end{Verbatim}
 \subsubsection{Registration}
@@ -284,9 +282,55 @@ Components in Stencil are written in TSX (more on TSX in the React chapter) with
 \subsubsection{Most Common Decorators}
 In Stencil most functionalities are declared via a decorator. The most common ones are:
 \begin{itemize}
-\item \textbf{@Component:} The following class is a copmonent.
-\item \textbf{@Method:} The following function is a public Method.
-\item \textbf{@Event:} The following 
+\item \textbf{@Component:} The following class is a component.
+\textbf{Example:}
+\begin{Verbatim}[frame=single]
+   @Component({
+     tag: 'hello-world',
+     styleUrl: 'hello-world.CSS'	
+   })
+\end{Verbatim}
+\item \textbf{@Method:} The following function is a public Method.\\
+\textbf{Example:}
+\begin{Verbatim}[frame=single]
+ @Method()
+ toString():string {
+   return 'Hello, World!';
+ }
+\end{Verbatim}
+\item \textbf{@Prop:} Declares a property of the component that can be used for passing data to the component via HTML.
+\item \textbf{@Event:} Creates an event emitter that takes data as a parameter and can emit DOM events.\\
+\textbf{Example:}
+\begin{Verbatim}[frame=single]
+	@Event buttonClicked: EventEmitter<string>
+	
+	onButtonClick(string s) {
+		buttonClicked.emit(s);
+	}
+\end{Verbatim}
+\item \textbf{@Listen} Creates an EventListener that is triggered by a specified event and executes a given function.
+\textbf{Example:}
+\begin{Verbatim}[frame=single]
+ @Listen('HelloButtonClicked') 	
+ helloButtonClickHandler(event: CustomEvent<string>) {
+   console.log('Hello, World!')
+ }
+\end{Verbatim}
+\item \textbf{@Watch:} Stencil's equivalent of useEffect. The Watch decorator reacts to changes of states or props and executes a function that is implemented immediately after it. The Watch decorator also takes the old value as well as the new value of the watched data as a parameter.
+\textbf{Example:}
+\begin{Verbatim}[frame=single]
+ @State() displayText: string;
+ 
+ @Watch('displayText')
+ watchStateHandler(oldValue:string, newValue:string){
+   console.log('the old value was: ', oldValue);
+   console.log('the new value is: ', newValue);
+ }
+
+ onButtonClick(string s) {
+   buttonClicked.emit(s);
+ }
+\end{Verbatim}
 \end{itemize}
 
 
