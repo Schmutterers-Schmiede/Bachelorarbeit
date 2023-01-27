@@ -9,7 +9,7 @@ import { Component, h, Element, EventEmitter, Event } from "@stencil/core";
 
 
 
-export class myEventBinding{
+export class myEventEmitter{
 
   secret:number = 42;
 

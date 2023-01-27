@@ -9,7 +9,7 @@ import { Component, h, Element} from "@stencil/core";
 
 
 
-export class myEventBinding{
+export class myParent{
 
   
 

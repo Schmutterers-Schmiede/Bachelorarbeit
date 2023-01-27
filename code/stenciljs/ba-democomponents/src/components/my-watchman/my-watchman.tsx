@@ -9,7 +9,7 @@ import { Component, h, Element, Watch, State } from "@stencil/core";
 
 
 
-export class myEventBinding{
+export class myWatchman{
 
   @State() text:string = 'Hello World'
   displayText:string

@@ -9,7 +9,7 @@ import { Component, h, Element, Listen, State} from "@stencil/core";
 
 
 
-export class myEventBinding{
+export class myEventListener{
 
   @State() secret:number;
 
