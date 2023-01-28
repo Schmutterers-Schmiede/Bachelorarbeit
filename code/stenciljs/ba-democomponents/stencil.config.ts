@@ -2,7 +2,15 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'ba-democomponents',
-  bundles: [{components: ['my-mover', 'my-event-emitter', 'my-event-listener', 'my-propbinding']}],
+  bundles: [{components: [
+    'my-mover', 
+    'my-event-emitter', 
+    'my-event-listener', 
+    'my-propbinding', 
+    'my-parent',
+    'my-child',
+    'my-watchman'
+  ]}],
   outputTargets: [
     {
       type: 'dist',
