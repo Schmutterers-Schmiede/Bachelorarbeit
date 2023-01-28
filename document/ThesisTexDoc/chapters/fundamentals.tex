@@ -1,9 +1,9 @@
 \chapter{Fundamentals and Related Works}
 \label{cha:fundamentals}
-For context it is important to elaborate some basics about web components and the frameworks they are used in. This means going into the basic architecture of each framework, comparing the structure of their web components and those created in StencilJs.//
+For context it is important to elaborate some basics about web components and the frameworks they are used in. This means going into the basic architecture of each framework, comparing the structure of their web components, and those created in StencilJs.//
 
 \section{Web Components}
-At a basic level, a web component is a JavaScript file that defines an encapsulated piece of HTML, CSS and JavaScript code that can be interpreted by a web browser and treated as an HTML element like <p> or <div>. This basic form of a web component does not depend on any framework and can be imported either in JavaScript using an import command or in HTML using a <script> tag. In this Thesis the terms "web component" and "component" will be used synonymously.
+At a basic level, a web component is a JavaScript file that defines an encapsulated piece of HTML, CSS and JavaScript code which can be interpreted by a web browser and treated as an HTML element like <p> or <div>. This basic form of a web component does not depend on any framework and can be imported either in JavaScript, using an import command, or in HTML, using a <script> tag. In this Thesis the terms "web component" and "component" will be used synonymously.
 
 \section{Angular}
 Angular is a framework for frontend web development and was created by Google in 2010. It is described in the official documentation as a Typescript based platform that includes a framework to build web applications, as well as many helpful libraries and tools to streamline the entire process of developing and maintaining a web application [1]. This means that Angular is not just a framework, but also has a large number of tools around the framework itself.
@@ -22,38 +22,36 @@ These files are linked together using the metadata given in the component.ts fil
 \subsection {Basic Concepts}
 
 \subsubsection {Services}
-A service is a part of a component that defines a specific behavior or functionality and is written exclusively in Typescript. Services can be injected into components to provide functionality. This helps to make the code more modular and reusable.
+A service is an independent block of code that defines a specific behavior or functionality and is, in the case of Angular, written exclusively in Typescript. Services can be injected into components to provide functionality. This promotes modularity and reusability.
 
 \subsubsection{NgModules}
-A module in Angular represents a collection of components and services that share a certain context.
+A module in Angular represents a collection of components and services that share a certain context (i.e. a library of different button components).
 
 \subsubsection{Decorators}
-An angular component is implemented as a Typescript class which can contain decorators with a certain type. A decorator tells the angular compiler how to use the following code (for example @NgComponent to tell the compiler that the following class is a component).
+An angular component is implemented as a Typescript class which can contain decorators with a certain type. A decorator tells the angular compiler how to use the following code (for example, @NgComponent tells the compiler that the following class is a component).
 
 \subsubsection{Metadata}
-as mentioned above, metadata tells the compiler what to do with a certain piece of code. To give a more specific example, the @NgComponent decorator’s metadata contains the location of the component’s HTML and CSS files. This way all files can be linked to a single component.
+Metadata can be passed to a decorator to provide additional information. For example, the @NgComponent decorator’s metadata contains the location of the component’s HTML and CSS files. This way all files can be linked to a single component.
 
 \subsubsection{Templates}
-Templates are an enhancement of HTML featured in Angular that allows a developer to inline some functionality like hiding UI-Elements, which would normally take several additional lines of Typescript and CSS. It works by placing HTML code in a <template> tag. The UI element(s) can then be altered using event binding.
+Templates are an enhancement of HTML featured in modern JavaScript/TypeScript frameworks that allows a developer to inline some functionality like hiding UI-Elements, which would normally take several additional lines of Typescript and CSS. It works by placing HTML code in a <template> tag. The UI element(s) can then be altered using event binding.
 
 \subsubsection{Event Binding}
 Event binding is a way of responding to DOM events inside the HTML code. A good example for this is the click event. By using it inside an HTML element like this:
-
 \begin{Verbatim}[frame=single]
- <button (Click)="onClick()">Do something</button>
+ <button (click)="onClick()">Do something</button>
 \end{Verbatim}
-
-the button will call the onClick function in the Typescript class of the component when it is clicked. The data flow of event binding goes only from the HTML to the typescript class or from child component to parent component.
+Note that "(click)" is an Angular specific syntax. The button will call the onClick function in the Typescript class of the component, when it is clicked. The data flow of event binding goes only from the HTML to the TypeScript class, or from child component to parent component.
 \pagebreak
 \subsubsection{Property Binding}
-Similar to event binding, but in this case the data flow is reversed (from HTML to Typescript or from parent to child). Data is passed as a property via HTML. The properties must be defined in the Typescript class. For example, text can be passed to a component in order to be displayed with the following code:\\[0.5cm]
-\textbf{HTML element:}
+With property binding, dynamic data can be passed to a child element of a component. This is useful for displayed data that may change frequently. For example, the path of an img tag, that has to display a different image in certain intervals can be passed with the following code:\\[0.5cm]
+HTML element:
 \begin{Verbatim}[frame=single]
- <my-text [text]="myText"></my-text>
+ <img [src]="imageUrl"></img>
 \end{Verbatim}
-\textbf{Inside the class:}
+In the TypeScript file there is a variable that contains the current path.
 \begin{Verbatim}[frame=single]
- myText:string;
+ imageUrl:string = '../../images/picture.png'
 \end{Verbatim}
 
 \subsubsection{Directives}
@@ -80,13 +78,13 @@ Here is an Example of the essential files of an Angular component:\\\\
    myText:string
  }
 \end{Verbatim}
-The @NgComponent decorator tells the compiler that the following class belongs to a component. The decorator takes an object as a parameter which provides essential metadata for the component. The selector determines the name with which the component can be used in an HTML file, the templateUrl contains the path of the component.html file and the styleUrls is an array in which the paths to all the CSS files belonging to the component. The following class containes the variable that is used to pass text to the h1 element in the component.html file.
+The @NgComponent decorator tells the compiler that the following class belongs to a component. The decorator takes an object as a parameter, which provides essential metadata for the component. The selector determines the name with which the component can be used in an HTML file, the templateUrl contains the path of the component.HTML file and the styleUrls is an array, in which the paths to all the CSS files belonging to the component are stored. The following class contains the variable that is used to pass text to the h1 element in the component.html file.
 %xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 \section{React}
-React is an open source Library for building user interfaces released by Facebook in 2013 to make the development of their social platform easier. React is not a fully fledged framework, because it does not dictate any design system or even provide an eco-system or built in features. Much of the functionality of a React application must be drawn from third party libraries.
+React is an open source Library for building user interfaces, released by Facebook in 2013 to make the development of their social media platform easier. React is not a fully fledged framework, because it does not dictate any design system or even provide an eco-system or built in features. Much of the functionality of a React application must be drawn from third party libraries.
 
 \subsection{Components in React}
-In Angular technologies are artificially separated by having a file for HTML and TypeScript for a component. React however separates concerns, meaning that what belongs together is stored together resulting in components that consist of a single file that contains the TypeScript code as well as the CSS styling and the HTML code of a component. To achieve this, React uses JSX or TSX, depending on whether the project is built in JavaScript or TypeScript. In this thesis TSX will be used. Furthermore, in React, components can be implemented as either class components or functional components. Before React 16.8 a class component would be required for state management. Since update 16.8 however the difference between functional and class components is only syntactical and it is recommended to use functional components going forward. In contrary to Angular, React components are not updated, but created as new instances.\\[0.5cm]
+In Angular technologies are artificially separated by having a file for HTML and TypeScript in a component. React however separates concerns, meaning that what belongs together is stored together resulting in single file components that contain the TypeScript code as well as the CSS styling and the HTML code. To achieve this, React uses JSX or TSX, depending on whether the project is built in JavaScript or TypeScript. In this thesis TSX will be used. Furthermore, in React, components can be implemented as either class components or functional components. Before React 16.8 a class component would be required for state management. However Since update 16.8, which introduces hooks (more on hooks later) the difference between functional and class components is only syntactical and it is recommended to use functional components going forward. In contrary to Angular, React components are not updated, but created as new instances.\\[0.5cm]
 In the following examples the syntactical difference between class and functional components will be demonstrated. In both cases the HTML will look like this:
 \begin{Verbatim}[frame=single]
  <MyText input="Hello, World!"/>
@@ -105,10 +103,10 @@ In the following examples the syntactical difference between class and functiona
    }			
  }
 \end{Verbatim}
-Note that there is no props object explicitely passed to the class. This is because the props object is auto generated from the HTML code.
+Note that there is no props object explicitely passed to the class. This is because the props object is auto generated by React from the HTML code.
 \subsection{Basic Concepts}
 \subsubsection{TSX}
-Without TSX every HTML element has to be created by calling the React.createElement function or as an object. TSX is an abstraction of TypeScript that enhances the syntax and enables the TypeScript compiler to parse HTML code inside a TypeScript file into calls of the React.createElement function. Thus Typescript and HTML code can be stored in the same file. In TSX, a React component has a method called "render" that contains the HTML code to be rendered.\\\\
+Without TSX every HTML element has to be created by calling the React.createElement function or as an object. TSX is an abstraction of TypeScript that enhances the syntax and enables the TypeScript compiler to parse HTML code inside a TypeScript file into calls of the React.createElement function. Thus Typescript and HTML code can be stored in the same file. In TSX, a React component has a method called "render" which returns the HTML code to be rendered.\\\\
 \textbf{Example for React.createElement call:}
 \begin{Verbatim}[frame=single]
  const element = React.createElement(
@@ -138,15 +136,13 @@ Without TSX every HTML element has to be created by calling the React.createElem
 \end{Verbatim}
 \subsubsection{States}
 In React, a component maintains its own data using a state. A state is different to props in that the data is private and managed only by the component itself.
-By giving the component control over its own data it can rerender itself and does no longer need to be reinstantiated every time the data changes. Since React 16.8 the use of a state no longer requires a class component with a constructor, essentially making class components obsolete. An example will be given in the hook section\\
+By giving the component control over its own data it can rerender itself and does no longer need to be reinstantiated every time the data changes. Since React 16.8 the use of a state no longer requires a class component with a constructor, essentially making class components obsolete. An example will be given in the hook section.\\
 
-The count variable is used as the state here. The Array defines the variable and a function that can be called to change the value of count. The useState hook (more on hooks below)is used to add the state to the component and initialize it. When the button is clicked, it will use the setCount function to update the state, which will in turn cause the component to rerender with the new state.
 \pagebreak
 \subsubsection{Hooks}
 Hooks were introduced in React 16.8 and are JavaScript functions that are used to handle state data in components. They  extract the stateful logic from components and make it reusable. The basic Hooks are:
 \begin{itemize}
-\item \textbf{useState():} is used to update a state, triggering a rerendering of the component.
-This example demonstrates the use of useState:
+\item \textbf{useState():} is used to update a state, triggering a rerendering of the component. This example demonstrates the use of useState:
 \begin{Verbatim}[frame=single]
  function Counter(){
    const [count, setCount] = useState(0);
@@ -158,8 +154,8 @@ This example demonstrates the use of useState:
    );
  }
 \end{Verbatim}
-
-\item \textbf{useEffect():} useEffect always runs when any stateful data changes. This behavior can be controlled more accurately by providing the hook with an array of dependencies in which the exact states that the hook should watch for changes are specified. If useEffect is called with no dependency array, it will run when the component is mounted into the UI and when the state changes. An empty dependency array will cause the hook to only run once when the component is initialized since there are no states being watched. If the array has dependencies only those states will be watched for changes and the hook will not necessarily run upon mounting the component.\\This example shows the same component as before with a second state variable and a useEffect hook:
+The count variable is used as the state here. The Array defines the variable and a function that can be called to change the value of count. The useState hook (more on hooks below)is used to add the state to the component and initialize it. When the button is clicked, it will use the setCount function to update the state, which will in turn cause the component to rerender with the new state.
+\item \textbf{useEffect():} useEffect always runs when any stateful data changes. This behavior can be controlled more accurately by providing the hook with an array of dependencies, in which the exact states that the hook should watch for changes are specified. If useEffect is called with no dependency array, it will run when the component is mounted into the UI and when the state changes. An empty dependency array will cause the hook to only run once when the component is initialized since there are no states being watched. If the array has dependencies only those states will be watched for changes and the hook will not necessarily run upon mounting the component.\\This example shows the same component as before with a second state variable and a useEffect hook:
 \begin{Verbatim}[frame=single]
  function Counter(){
    const [count, setCount] = useState<number>(0);
@@ -180,7 +176,7 @@ This example demonstrates the use of useState:
  }
 \end{Verbatim}
 \pagebreak
-\item \textbf{useContext():} The useContext hook allows for stateful data to be shared or scoped using React's Context API. This means that a variable can be used by multiple disconnected components and if there is a change all the components that use the variable are updated. To do this, a variable or set of variables must be declared in the top most parent component (i.e. the App component if the data is to be used everywhere). Any child component inside the resulting component tree will inherit this variable without the need to pass it via property. By calling the useContext hook the data can be accessed and should it change, the changes will be applied to all child components automatically. The following example demonstrates the use of useContext.\\[0.5cm]
+\item \textbf{useContext():} The useContext hook allows for stateful data to be shared or scoped using React's Context API. This means that a variable can be used by multiple disconnected components and, if there is a change, all the components that use the variable are updated. To do this, a variable or set of variables must be declared in the top most parent component (i.e. the App component if the data is to be used everywhere). Any child component inside the resulting component tree will inherit this variable without the need to pass it via property. By calling the useContext hook the data can be accessed and, should it change, the changes will be applied to all child components automatically. The following example demonstrates the use of useContext.\\[0.5cm]
 In App.js:
 \begin{Verbatim}[frame=single]
  const fruits = { //data for context
@@ -273,7 +269,7 @@ When the Vue compiler comes across a component inside a template tag it needs to
 Components can be registered either globally by using the app.component function or locally using the approach described above.
 
 \section{Stencil}
-Stencil is an open source library created by the ionic framework team specificly to create web components that could be used in Angular, React and Vue using a single code base as ionic supports all three of these frameworks and provides a library of components out of the box that need to run in each framework. As mentioned, the purpose of Stencil is only to create component libraries and not full websites or apps. There is an Index.html file in a Stencil project, but it is only meant for testing. Therefore Stencil is not a framework. The most important part of Stencil are two features. The first being it's compiler which creates framework agnostic web  components, meaning pure JavaScript files and the second being the "output targets" feature which can produce framework native components.
+Stencil is an open source library created by the ionic framework team specificly to create web components that could be used in Angular, React and Vue using a single code base as ionic supports all three of these frameworks and provides a library of components out of the box that need to run in each framework. As mentioned, the purpose of Stencil is only to create component libraries and not full websites or apps. There is an Index.html file in a Stencil project, but it is only meant for testing. Therefore Stencil is not considered a framework. The most important part of Stencil are two features. The first is it's compiler which creates framework agnostic web  components, meaning pure JavaScript components along with SCSS files for styling. The second is the "output targets" feature which can produce framework native components.
 
 \subsection{Components in Stencil}
 Components in Stencil are written in TSX (more on TSX in the React chapter) with a separate CSS file. The structure of the component itself is very simple. The component is just a TypeScript class with a component decorator which holds metadata. Inside the Class most of a component's functionality that is not a private function uses a decorator.

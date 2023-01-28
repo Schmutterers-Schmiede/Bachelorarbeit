@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  28 JAN 2023 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.12)  28 JAN 2023 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1696,43 +1696,45 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-2.
+1.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+54.
+
+(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 <images/angular-component-structure.png, id=245, 702.625pt x 357.335pt>
 File: images/angular-component-structure.png Graphic file (type png)
 <use images/angular-component-structure.png>
 Package pdftex.def Info: images/angular-component-structure.png  used on input 
-line 62.
+line 60.
 (pdftex.def)             Requested size: 426.79945pt x 227.62492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--64
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
 
  []
 
 
-Overfull \hbox (11.3892pt too wide) in paragraph at lines 60--64
+Overfull \hbox (11.3892pt too wide) in paragraph at lines 58--62
 []
  []
 
 [4 <./images/angular-component-structure.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-74.
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [5]
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
@@ -1881,7 +1883,7 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022
 type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 ss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (32 pages, 486087 bytes).
+Output written on main.pdf (32 pages, 486016 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  356 compressed objects within 4 object streams

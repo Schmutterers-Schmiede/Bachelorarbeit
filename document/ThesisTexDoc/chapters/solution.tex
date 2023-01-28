@@ -19,4 +19,6 @@ About these components:
 \item \textbf{Watchman:} The watchman component uses a watch decorator to watch its state, a string variable, for changes. Through user input via textbox this state is changed with every keystroke and the displayed text will change along with the state. This component tests the event binding and its equivalents in React and Vue.
 \end{itemize}
 A component library created in Stencil can be compiled using the console command \verb+npm run build+.\\
-This will compile all the components in the project into JavaScript and SCSS files
+This script will start the compiler, which then creates a directory named "dist". This directory contains a components directory that holds the resulting framework agnostic components. Along with these components, the dist directory also contains numerous JavaScript resources, which frameworks need for various loading or importing purposes.
+
+\subsection{Output Targets}
